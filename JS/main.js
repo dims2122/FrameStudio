@@ -20,11 +20,11 @@ async function loadComponents() {
         navbar: "navbar.html",
         hero: "hero.html",
         produk: "services.html",
-        paket: "pricing.html",
-        tentang: "about.html",
+        paket: "paket.html",
+        tentang: "tentang.html",
         keunggulan: "features.html",
         portfolio: "portfolio.html",
-        kontak: "contact.html",
+        kontak: "kontak.html",
         footer: "footer.html",
         whatsapp: "whatsapp-button.html"
 
