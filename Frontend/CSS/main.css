@@ -1,0 +1,43 @@
+/* ========================================
+   MAIN CSS
+   Menghubungkan seluruh file CSS
+   ======================================== */
+
+
+/* ========================================
+   BASE
+   ======================================== */
+
+@import url("./base/reset.css");
+@import url("./base/variables.css");
+@import url("./base/typography.css");
+@import url("./base/global.css");
+
+
+/* ========================================
+   COMPONENTS
+   ======================================== */
+
+@import url("./components/navbar.css");
+@import url("./components/footer.css");
+@import url("./components/buttons.css");
+@import url("./components/cards.css");
+@import url("./components/forms.css");
+@import url("./components/modal.css");
+@import url("./components/badges.css");
+@import url("./components/whatsapp.css");
+
+
+/* ========================================
+   SECTIONS
+   ======================================== */
+
+@import url("./sections/hero.css");
+@import url("./sections/services.css");
+@import url("./sections/about.css");
+@import url("./sections/features.css");
+@import url("./sections/pricing.css");
+@import url("./sections/portfolio.css");
+@import url("./sections/testimonials.css");
+@import url("./sections/faq.css");
+@import url("./sections/contact.css");

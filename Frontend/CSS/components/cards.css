@@ -1,0 +1,180 @@
+/* ========================================
+   CARDS
+   ======================================== */
+
+.card {
+    background: var(--surface);
+
+    border: 1px solid var(--line);
+
+    border-radius: var(--radius);
+
+    box-shadow: var(--shadow);
+
+    transition: 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(124, 92, 255, 0.35);
+}
+
+/* SERVICE CARD */
+
+.service-card {
+    padding: 30px;
+}
+
+.service-card .service-icon {
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    border-radius: 14px;
+
+    background: rgba(124, 92, 255, 0.12);
+
+    color: var(--primary2);
+
+    font-size: 1.3rem;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+
+    font-size: 1.15rem;
+}
+
+.service-card p {
+    font-size: 0.88rem;
+}
+
+/* PRICING CARD */
+
+.pricing-card {
+    position: relative;
+
+    padding: 32px;
+}
+
+.pricing-card h3 {
+    margin-bottom: 10px;
+}
+
+.pricing-card .price {
+    margin: 20px 0;
+
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+.pricing-card .price span {
+    color: var(--muted);
+
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+/* PORTFOLIO CARD */
+
+.portfolio-card {
+    overflow: hidden;
+}
+
+.portfolio-image {
+    aspect-ratio: 16 / 10;
+
+    overflow: hidden;
+
+    background: var(--surface2);
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.4s ease;
+}
+
+.portfolio-card:hover .portfolio-image img {
+    transform: scale(1.05);
+}
+
+.portfolio-content {
+    padding: 22px;
+}
+
+.portfolio-content h3 {
+    margin-bottom: 8px;
+}
+
+/* TESTIMONIAL CARD */
+
+.testimonial-card {
+    padding: 28px;
+}
+
+.testimonial-card p {
+    margin-bottom: 20px;
+
+    font-size: 0.9rem;
+}
+
+.testimonial-user {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+.testimonial-avatar {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: var(--primary);
+
+    color: #fff;
+
+    font-weight: 700;
+}
+
+.testimonial-user h4 {
+    font-size: 0.9rem;
+}
+
+.testimonial-user span {
+    color: var(--muted);
+
+    font-size: 0.75rem;
+}
+
+/* FEATURE CARD */
+
+.feature-card {
+    padding: 25px;
+}
+
+.feature-card h3 {
+    margin-bottom: 8px;
+
+    font-size: 1rem;
+}
+
+.feature-card p {
+    font-size: 0.85rem;
+}

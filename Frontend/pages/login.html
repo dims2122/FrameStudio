@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Login | FrameStudioCode</title>
+
+    <meta
+        name="description"
+        content="Login ke akun FrameStudioCode."
+    >
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="../CSS/main.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div id="navbar"></div>
+
+
+    <!-- LOGIN -->
+    <main>
+
+        <section class="auth-section">
+
+            <div class="container">
+
+                <div class="auth-card">
+
+                    <!-- HEADER -->
+                    <div class="auth-header">
+
+                        <div class="auth-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <span class="eyebrow">
+                            Welcome Back
+                        </span>
+
+                        <h1>
+                            Login ke
+                            <span>Akun Anda</span>
+                        </h1>
+
+                        <p>
+                            Masuk untuk melanjutkan ke
+                            FrameStudioCode.
+                        </p>
+
+                    </div>
+
+
+                    <!-- FORM -->
+                    <form
+                        class="auth-form"
+                        id="loginForm"
+                    >
+
+                        <!-- EMAIL -->
+                        <div class="form-group">
+
+                            <label for="loginEmail">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                id="loginEmail"
+                                name="email"
+                                placeholder="nama@email.com"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- PASSWORD -->
+                        <div class="form-group">
+
+                            <label for="loginPassword">
+                                Password
+                            </label>
+
+                            <div class="password-field">
+
+                                <input
+                                    type="password"
+                                    id="loginPassword"
+                                    name="password"
+                                    placeholder="Masukkan password"
+                                    autocomplete="current-password"
+                                    required
+                                >
+
+                                <button
+                                    type="button"
+                                    class="password-toggle"
+                                    aria-label="Tampilkan password"
+                                >
+                                    <i class="fa-solid fa-eye"></i>
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- REMEMBER -->
+                        <div class="auth-options">
+
+                            <label class="checkbox-label">
+
+                                <input
+                                    type="checkbox"
+                                    name="remember"
+                                >
+
+                                <span>
+                                    Ingat saya
+                                </span>
+
+                            </label>
+
+                            <a href="#">
+                                Lupa password?
+                            </a>
+
+                        </div>
+
+
+                        <!-- BUTTON -->
+                        <button
+                            type="submit"
+                            class="btn btn-primary auth-button"
+                        >
+
+                            Login
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                    </form>
+
+
+                    <!-- REGISTER -->
+                    <div class="auth-footer">
+
+                        <p>
+                            Belum punya akun?
+                            <a href="register.html">
+                                Daftar sekarang
+                            </a>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <div id="footer"></div>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="../JS/main.js"></script>
+
+</body>
+
+</html>

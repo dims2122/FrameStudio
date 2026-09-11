@@ -1,0 +1,81 @@
+/* ========================================
+   PRICING SECTION
+   ======================================== */
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    align-items: stretch;
+}
+
+.pricing-card {
+    height: 100%;
+}
+
+.pricing-card.featured {
+    position: relative;
+    border-color: var(--primary);
+    box-shadow:
+        0 20px 60px
+        rgba(124, 92, 255, 0.15);
+}
+
+.pricing-card.featured::before {
+    content: "Paling Populer";
+
+    position: absolute;
+    top: -12px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    padding: 5px 12px;
+
+    border-radius: 999px;
+
+    background: var(--primary);
+
+    color: #fff;
+
+    font-size: 0.7rem;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.pricing-features {
+    display: flex;
+    flex-direction: column;
+
+    gap: 11px;
+
+    margin: 25px 0;
+}
+
+.pricing-feature {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 9px;
+
+    color: var(--muted);
+
+    font-size: 0.82rem;
+}
+
+.pricing-feature i {
+    flex-shrink: 0;
+
+    color: var(--success);
+
+    margin-top: 3px;
+}
+
+@media (max-width: 900px) {
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        max-width: 550px;
+        margin: 0 auto;
+    }
+}
