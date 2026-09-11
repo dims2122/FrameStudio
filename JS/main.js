@@ -103,9 +103,8 @@ async function loadComponents() {
 
     /* Setelah semua component selesai */
 
-    if (typeof initializeNavbar === "function") {
-    initializeNavbar();
-}
+    initializePage();
+
 }
 
 
