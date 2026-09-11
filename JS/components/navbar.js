@@ -4,45 +4,61 @@
 
 function initializeNavbar() {
 
-    const isSubPage =
-        window.location.pathname.includes("/pages/");
+    console.log("NAVBAR JS BERJALAN");
 
+    const path = window.location.pathname;
 
-    const basePath =
-        isSubPage ? "../" : "";
+    // Ambil root project GitHub Pages
+    const projectRoot =
+        path.includes("/pages/")
+            ? path.substring(0, path.indexOf("/pages/"))
+            : path.replace(/\/$/, "");
 
 
     const links = {
 
-        home: `${basePath}index.html`,
+        home:
+            `${projectRoot}/index.html`,
 
-        tentang: `${basePath}pages/tentang.html`,
+        tentang:
+            `${projectRoot}/pages/tentang.html`,
 
-        layanan: `${basePath}pages/layanan.html`,
+        layanan:
+            `${projectRoot}/pages/layanan.html`,
 
-        paket: `${basePath}pages/paket.html`,
+        paket:
+            `${projectRoot}/pages/paket.html`,
 
-        porto: `${basePath}pages/porto.html`,
+        porto:
+            `${projectRoot}/pages/porto.html`,
 
-        faq: `${basePath}pages/faq.html`,
+        faq:
+            `${projectRoot}/pages/faq.html`,
 
-        kontak: `${basePath}pages/kontak.html`
+        kontak:
+            `${projectRoot}/pages/kontak.html`
 
     };
 
+
+    /* ==============================
+       NAVBAR LINKS
+       ============================== */
 
     document
         .querySelectorAll("[data-link]")
         .forEach(link => {
 
             const target =
-                link.dataset.link;
+                link.getAttribute("data-link");
 
 
             if (links[target]) {
 
-                link.href =
-                    links[target];
+                link.setAttribute(
+                    "href",
+                    links[target]
+                );
 
             }
 
